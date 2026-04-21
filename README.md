@@ -1,3 +1,15 @@
+# UIInfoSuite3 (Personal Fork)
+
+This repository is a personal fork of a fork of the Stardew Valley UI Info Suite mod family.
+
+I maintain this project primarily to improve my coding skills and learn through real-world maintenance work.
+Because of that, releases/versions are subject to change as I iterate.
+
+## Release stability note
+
+- The **latest published release** is the current working version.
+- Any commits/changes after that release may be experimental and can change without notice.
+
 # If you are here to install the mod
 
 ## We're on Nexus again!!
@@ -6,7 +18,7 @@ Big thank you to the Nexus support staff for clearing us to be back on the Nexus
 **[Download Here](https://www.nexusmods.com/stardewvalley/mods/7098)**
 
 ### GitHub Download
-**Go to the [Releases page](https://github.com/Annosz/UIInfoSuite2/releases) on the side, where you can always find the latest release. Download the UIInfoSuite2.zip file and copy it's content to the mod folder.**
+**Go to the [Releases page](https://github.com/emy3/UIInfoSuite3/releases) where you can always find the latest release. Download the UIInfoSuite2.zip file and copy its content to the mod folder.**
 ![image](https://user-images.githubusercontent.com/10620868/145580465-5dc6cd97-e4da-4830-a639-8f3fb94a1001.png)
 _Do **NOT** download the Source code (zip) or Source code (tar.gz). Also, do **NOT**  use the green Code > Download ZIP button on the main page. These methods will only give you the source code but you will not be able to run the mod and use it with Stardew Valley!_
 
@@ -14,6 +26,25 @@ _Do **NOT** download the Source code (zip) or Source code (tar.gz). Also, do **N
 
 # UI Info Suite 2
 _Ongoing maintenance for the original UI Info Suite mod for Stardew Valley._
+
+## Local development (build/test)
+
+Prerequisites:
+- .NET SDK 6.x
+- Stardew Valley installed locally
+- SMAPI-compatible modding setup
+
+Build steps:
+1. Create `/home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2/UIInfoSuite2.csproj.local` with:
+   - `GamePath` set to your Stardew Valley install directory
+   - Optional `LangVersion` (for example `10`)
+2. Run:
+   - `dotnet restore /home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2.sln`
+   - `dotnet build -c Release /home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2.sln`
+
+Test status:
+- This repository currently has no dedicated automated test project.
+- Practical validation is done by launching Stardew Valley via SMAPI and checking in-game features.
 
 UI Info Suite provides helpful information about things around you designed to help you be aware of what's going on without feeling like you're cheating.
 
