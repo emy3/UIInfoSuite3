@@ -1,0 +1,6 @@
+﻿<project>
+  <PropertyGroup>
+    <LangVersion>10</LangVersion>
+    <GamePath>S:\SteamLibrary\steamapps\common\Stardew Valley</GamePath>
+  </PropertyGroup>
+</project>

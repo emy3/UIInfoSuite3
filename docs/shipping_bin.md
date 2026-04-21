@@ -1,4 +1,4 @@
-### Shipping bin notes
+﻿### Shipping bin notes
 
 [svw:Shipping]: https://stardewvalleywiki.com/Shipping
 
@@ -6,7 +6,7 @@ The "Full Shipment" achievement is awarded when the player has [shipped all item
 
 The game tries to give the achievement to the player when it displays the shipping summary menu (`ShippingMenu`) during the night. It uses `Utility.hasFarmerShippedAllItems` to check if the requirements are met. This means that the "Full Shipment" achievement can only be earned on nights during which the player has shipped some items.
 
-The "Full Shipment" achievement is achievement number 34. An item is shipped if it is present in thes `Game1.player.basicShipped` dictionary.
+The "Full Shipment" achievement is achievement number 34. An item is shipped if it is present in these `Game1.player.basicShipped` dictionary.
 
 There are 4 points at which the shipping items are determined:
 - In `Utility.getFarmerItemsShippedPercent` used by `ShippingMenu` via `Utility.hasFarmerShippedAllItems` to award the achievement
@@ -95,4 +95,4 @@ Where `this` is an `StardewValley.Object`.
 
 Other functions of note:
 - **ShippingBin.shipItem** and **Farm.shipItem** adds the item to the shipping bin
-- **Game1.player.shippedBasic** keeps track of shipped items statistic 
+- **Game1.player.shippedBasic** keeps track of shipped items statistic
