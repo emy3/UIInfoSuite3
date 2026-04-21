@@ -24,7 +24,7 @@
    - Stardew Valley
    - SMAPI
 2. In `UIInfoSuite2/`, create `UIInfoSuite2.csproj.local` with a valid `GamePath` to your Stardew Valley install.
-3. From repo root (`/home/runner/work/UIInfoSuite3/UIInfoSuite3`) run:
+3. From the repository root run:
    - `dotnet restore UIInfoSuite2.sln`
    - `dotnet build -c Release UIInfoSuite2.sln`
 4. Deploy/load the built mod with SMAPI and verify behavior in-game.

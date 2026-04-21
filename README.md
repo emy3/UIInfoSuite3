@@ -35,12 +35,12 @@ Prerequisites:
 - SMAPI-compatible modding setup
 
 Build steps:
-1. Create `/home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2/UIInfoSuite2.csproj.local` with:
+1. Create `UIInfoSuite2/UIInfoSuite2.csproj.local` with:
    - `GamePath` set to your Stardew Valley install directory
    - Optional `LangVersion` (for example `10`)
 2. Run:
-   - `dotnet restore /home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2.sln`
-   - `dotnet build -c Release /home/runner/work/UIInfoSuite3/UIInfoSuite3/UIInfoSuite2.sln`
+   - `dotnet restore UIInfoSuite2.sln`
+   - `dotnet build -c Release UIInfoSuite2.sln`
 
 Test status:
 - This repository currently has no dedicated automated test project.
